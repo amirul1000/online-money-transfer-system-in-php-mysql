@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900|Nunito+Sans:300,400,600,700,800,900');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #777777;
+    line-height: 26px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+button,
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-bottom: 20px;
+    font-family: 'Muli', sans-serif;
+}
+
+p{
+	margin-bottom: 20px;	
+}
+
+select:focus,
+select:active {
+    box-shadow: 0;
+    border: 0;
+    outline: 0
+}
+
+
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+}
+
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+input:focus,
+input:active {
+    outline: none;
+}
+
+
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+
+/*Remove bootstrap tab css*/
+
+.nav-tabs > li > a {
+    border: 0
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    border: 0;
+    outline: 0
+}
+
+.nav-tabs {
+    border: 0
+}
+
+.nav-tabs > li > a:hover {
+    border: 0
+}
+
+/*navbar css icon*/
+
+ .navbar-brand {
+     height: auto;
+     padding: 10px;
+     margin-top: 10px
+ }
+
+ nav.navbar {
+     transition: 1s
+ }
+
+ nav.navbar.sticky {
+     background: #fff none repeat scroll 0 0;
+     border-radius: 0;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 555;
+     transition: 1s;
+     box-shadow: 1px 1px 1px #efefef
+ }
+
+ .menu li.searchbtn {
+     line-height: 90px;
+     padding: 0 15px;
+     cursor: pointer;
+ }
+
+.navbar-toggle .icon-bar {
+    position: relative;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    width: 28px;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent !important;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    background: #fba919;
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.navbar-toggle.active span:nth-child(4) {
+    margin-top: -2.5px;
+    transform: rotateZ(45deg);
+}
+
+
+/*bootstrap collaps css*/
+
+.panel-heading {
+    border-bottom: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+    position: relative;
+}
+
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+    border-top: 0 none;
+}
+
+.panel-title {
+    background: #fff;
+}
+
+.panel-title a {
+    background: transparent;
+    display: block;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    z-index: 4
+}
+
+.panel-group .panel {
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+.panel {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    margin-bottom: 20px;
+}
+
+.panel-body {
+    line-height: 24px
+}
+
+.panel-heading {
+    position: relative;
+}
+
+.panel-heading::before {
+    content: "";
+    font-family: fontawesome;
+    height: 25px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    width: 25px;
+    background: #8dc12b;
+    color: #fff;
+    text-align: center;
+    line-height: 27px;
+    border-radius: 50%;
+    margin-top: -12.5px;
+    font-size: 14px
+}
+
+.slick-slide {
+    outline: none !important;
+}
+
+.newsfomr input::-webkit-input-placeholder {
+    /* Chrome */
+    color: #fff;
+    opacity: 1
+}
+
+.newsfomr input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    opacity: 1;
+}
+
+.panel-heading.active::before {
+    content: "\f068";
+}
+
+.panel-heading.active a {
+    color: #8dc12b
+}
+
+/*bootstrap form*/
+
+.form-control:focus {
+  border-color: #ccc;
+  box-shadow: 0 0 0 ;
+  outline: 0 none;
+}
+
+
+
+/*js preloader*/
+
+.js div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 988899;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-image: url('../img/favicon.png');
+    background-position: center center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+
+}
+
+/*pagination css*/
+
+.pagination > li > a,
+.pagination > li > span {
+    background-color: #fff;
+    border: 0 none;
+    color: #003455;
+    display: inline-block;
+    float: none;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 6px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    transition: .4s
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    background-color: #fde428;
+    border-color: transparent;
+    color: #003455;
+    z-index: 2;
+}
+
+.pagination {
+    border-radius: 4px;
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-left: 0;
+}
+.pagination a span.fa {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+/*end of pagination css*/
+
+/*button css*/
+
+.btn{
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 0;
+    border: 0;
+    display: inline-block;
+}
+.btn.btn-primary{
+    background: #3a7cdd;
+}
+
+.btn.btn-primary:hover{
+    background: #24c8a6;
+    color: #fff
+}
+
+.btn.btn-default{
+    background: #24c8a6;
+}
+.btn.btn-default:hover{
+    background: #3a7cdd;
+    color: #fff
+}
+.btn.btn-lg{
+    width: 100%;
+}
+.btn.btn-sm{
+    width: 200px;
+}

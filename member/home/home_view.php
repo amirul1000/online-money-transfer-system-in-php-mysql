@@ -1,0 +1,732 @@
+<?php
+	//$_SERVER['SERVER_NAME'] = $_SERVER['SERVER_NAME'].'/webapp';
+	//$site_url = "http://".$_SERVER['SERVER_NAME'];
+	$assets_url = '../../v4.0.1/theme';
+?>
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.0
+Version: 3.5
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD --><head>
+<meta charset="utf-8"/>
+<title>Sovereign Money Member Area</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="<?=$assets_url?>/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="<?=$assets_url?>/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="<?=$assets_url?>/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="<?=$assets_url?>/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="<?=$assets_url?>/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+<link href="<?=$assets_url?>/assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
+<link href="<?=$assets_url?>/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+<link href="<?=$assets_url?>/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
+<!-- END PAGE LEVEL PLUGIN STYLES -->
+<!-- BEGIN PAGE STYLES -->
+<link href="<?=$assets_url?>/assets/admin/pages/css/tasks.css" rel="stylesheet" type="text/css"/>
+<!-- END PAGE STYLES -->
+<!-- BEGIN THEME STYLES -->
+<!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
+<link href="<?=$assets_url?>/assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="<?=$assets_url?>/assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="<?=$assets_url?>/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="<?=$assets_url?>/assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="<?=$assets_url?>/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://sovereign.money/toastr/toastr.css">    
+<script src="http://sovereign.money/toastr/toastr.js"></script>
+
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices -->
+<!-- DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default -->
+<!-- DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle -->
+<!-- DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-fixed" class to have fixed sidebar -->
+<!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
+<!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
+<!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
+
+<style>
+ .heading_text_logo{
+	color: #fff;
+    float: left;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 12px;
+    padding-top: 2px;
+    text-transform: uppercase;
+	font-weight:bold
+ }
+</style>
+<body class="page-header-fixed page-quick-sidebar-over-content page-style-square"> 
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		<div class="page-logo" style="width:363px;">
+			<a href="">
+            <label>
+			<img src="../../images/logo.png" alt="logo" class="logo-default" style="height:30px;float:left"/>
+            <h6 class="heading_text_logo">Sovereign Money</h6></label>
+			</a>
+			<div class="menu-toggler sidebar-toggler hide">
+			
+			</div>
+		</div>
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</a>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+		<!-- BEGIN TOP NAVIGATION MENU -->
+		<?php
+		 include("../template/top_menu.php");
+		?>
+		<!-- END TOP NAVIGATION MENU -->
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+	<!-- BEGIN SIDEBAR -->
+	 <?php
+	  include("../template/left_menu.php");
+	 ?> 
+	<!-- END SIDEBAR -->
+    
+				
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							 Widget settings form goes here
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn blue">Save changes</button>
+							<button type="button" class="btn default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<!-- BEGIN STYLE CUSTOMIZER -->
+			<!-- END STYLE CUSTOMIZER -->
+			<!-- BEGIN PAGE HEADER-->
+			<!--<h3 class="page-title">
+			Dashboard <small>reports & statistics</small>
+			</h3>
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="home">Home</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="home">Dashboard</a>
+					</li>
+				</ul>
+				
+			</div>
+-->            
+            <?php
+			 ob_start(); 
+			 session_start();
+			 $count = count($_SESSION['cart']);
+			 if($count>0)
+			 {
+			?>			
+            <div class="row" align="center">                 
+                  <!-- BEGIN CART -->
+                    <div class="top-cart-block">
+                      <div class="top-cart-info">                        
+                        <p><?=$count?> Items in cart</p>
+                        <a href="http://sovereign.money/cart.php" id="view-cart" class="eye-btn">View Cart</a>|
+                        <a href="http://sovereign.money/cart.php" id="check-out" class="eye-btn">Check Out</a>
+                      </div>
+                      <i class="fa fa-shopping-cart"></i>  
+                    </div>
+                    <!--END CART -->
+            </div>
+            <?php
+			 }
+			?>
+            
+			<!-- END PAGE HEADER-->
+			<!-- BEGIN DASHBOARD STATS -->  
+            
+            <div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    	<button type="button" class="btn"  data-toggle="modal"  href="#invite_by_email" style="background-color: #01C27C;
+    border: 1px solid #209369;
+    float: right;
+    border-radius: 3px !important;
+    color: #FFF;
+    margin-bottom: 33px;">Invite freinds,earn $10 worth of coins</button>    
+  
+                </div>
+            </div>   
+            
+            
+          <div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                Refferal Link 
+    <a href="http://sovereign.money/member/login/?reffer=<?=base64_encode($_SESSION['users_id'])?>" style="background-color: #01C27C;
+    border: 1px solid #209369;
+    float: right;
+    border-radius: 3px !important;
+    color: #FFF;
+    margin-bottom: 33px;">http://sovereign.money/member/login/?reffer=<?=base64_encode($_SESSION['users_id'])?></a>   
+                </div>
+            </div>    
+   
+            
+            
+            <div class="row" id="home_top_sections">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                	<table width="100%">
+                		<tr>
+                			<th>SVM Wallet</th>
+                			<th>Available Equivalents</th>
+                		</tr>
+
+                		<tr>
+                			<td><a href="#">Transfer Money</a></td>
+                			<td></td>
+                		</tr>
+                		<tr>
+                			<td><a href="#">Send or Request Money</a></td>
+                			<td></td>
+                		</tr>
+                		<tr>
+                			<td><a href="#">Payment Preference</a></td>
+                			<td></td>
+                		</tr>
+                		<tr>
+                			<td><a href="#">Merchant Fee</a></td>
+                			<td></td>
+                		</tr> 
+
+                	</table>
+                    	 
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align: right;">
+                    	 <table width="100%"> 
+
+                		<tr>
+                			<td></td>
+                			<td><span class="doller_val">$<?php
+								    echo get_balance($db,$_SESSION['users_id']);
+								 ?> USD</span>
+                            </td>
+                		</tr>
+                		<tr>
+                			<td>USD <span class="doller_sub">Primery</span></td>
+                			<td><span class="doller_val">$<?php
+								    echo get_balance($db,$_SESSION['users_id']);
+								 ?> USD</span>
+                            </td>
+                		</tr>
+                		<tr>
+                			<td>RUB </td>
+                			<td><span class="doller_val">$<?php
+								    echo get_balance($db,$_SESSION['users_id']);
+								 ?> RUB</span>
+                            </td>
+                		</tr>
+                		 
+
+                	</table>
+
+                </div>
+               
+			</div>   
+           </br>
+			<hr style="border-bottom:1px solid #ccc" />
+            </br>
+            <div class="row">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+            	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            		<div class="pay_inner">
+            			<div class="">
+            				<img src="../../images/pay_inner.png" class="img-responsive" width="60" height="60">
+            				<h4 class="pay_title">Pay for goods or services</h4>
+            				<p class="desc">No fee for you, The recipient dasys a fee </p>
+            				<div class="pay_footer">
+            					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            						<img src="../../images/pay_footer.png" width="25" height="25">
+            					</div>
+            					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            						 <p> Eligible Purchase coverd by <a href="">Purchase protections</a></p>
+            					</div>
+            				</div>
+            			</div>
+            		</div>                            
+            	</div>
+
+            	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            		   <div class="pay_inner">
+            			<div class="">
+            				<img src="../../images/pay_inner.png" class="img-responsive" width="60" height="60">
+            				<h4 class="pay_title">Create an invoice</h4>
+            				<p class="desc">You will pay a fee when you recive the money</p>
+            				<div class="pay_footer">
+            					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+            						<img src="../../images/pay_footer.png"width="25" height="25">
+            					</div>
+            					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            						 <p> Eligible Purchase coverd by <a href="">Purchase protections</a></p>
+            					</div>
+            				</div>
+            			</div>
+            		</div>                           
+            	</div>
+               <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+            	<style type="text/css">
+            		.pay_inner {
+						    border: 1px solid #ccc;
+						    border-radius: 8px !important;
+						    text-align: center;
+						    padding-top: 25px;
+						    margin-bottom: 60px;
+						}
+						.pay_inner h4 {
+							color: #147cca;
+							font-weight: bold;
+							font-size: 13px;
+						}
+						.pay_title{
+							padding-top: 20px;
+						}
+
+						   .pay_footer{
+						    background: #095b95;
+						    display: -webkit-inline-box;
+						    color: #FFF;
+						    padding: 6px 0px;
+						    font-size: 12px;
+						    line-height: 16px;
+						}
+						.pay_inner p.desc {
+							padding: 4px 20px 35px 20px;
+						}
+						.pay_inner a{
+							color: #FFF;
+						}
+						.pay_inner img {
+							text-align: center;
+							 margin: 0 auto;
+
+						}
+						#home_top_sections table td{
+						    padding: 10px 0px 0px 3px;
+                            font-size: 12px;
+
+
+						}
+						.doller_sub{
+							display: block;
+						}
+						.doller_val {
+							font-size: 14px;
+							color: #686868;
+						}
+            	</style>
+             
+            
+            </div> 
+
+            
+            <!-- <div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="dashboard-stat purple-plum">
+						<div class="visual">
+							<i class="fa fa-comments"></i>
+						</div>
+						<div class="details">
+							<div class="number">
+								 <?php
+								    echo get_balance($db,$_SESSION['users_id']);
+								 ?>
+							</div>
+							<div class="desc">
+								Total Balance
+							</div>
+						</div>
+						<a class="more" href="../transactions">
+						View more <i class="m-icon-swapright m-icon-white"></i>
+						</a>
+					</div>
+				</div>
+                
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="dashboard-stat green-haze">
+						<div class="visual">
+							<i class="fa fa-comments"></i>
+						</div>
+						<div class="details">
+							<div class="number">
+								 <?php
+								    echo get_transactions_credit($db,$_SESSION['users_id']);
+								 ?>
+							</div>
+							<div class="desc">
+								Total Credited
+							</div>
+						</div>
+						<a class="more" href="../transactions">
+						View more <i class="m-icon-swapright m-icon-white"></i>
+						</a>
+					</div>
+				</div>
+                
+                
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="dashboard-stat purple-plum">
+						<div class="visual">
+							<i class="fa fa-comments"></i>
+						</div>
+						<div class="details">
+							<div class="number">
+								 <?php
+								    echo get_transactions_debit($db,$_SESSION['users_id']);
+								 ?>
+							</div>
+							<div class="desc">
+								Total Debited
+							</div>
+						</div>
+						<a class="more" href="../transactions">
+						View more <i class="m-icon-swapright m-icon-white"></i>
+						</a>
+					</div>
+				</div>
+                
+                
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="dashboard-stat green-haze">
+						<div class="visual">
+							<i class="fa fa-comments"></i>
+						</div>
+						<div class="details">
+							<div class="number">
+								 <?php
+								    echo get_total_deposits($db,$_SESSION['users_id']);
+								 ?>
+							</div>
+							<div class="desc">
+								Total Deposited
+							</div>
+						</div>
+						<a class="more" href="../deposits">
+						View more <i class="m-icon-swapright m-icon-white"></i>
+						</a>
+					</div>
+				</div>
+                
+                
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="dashboard-stat purple-plum">
+						<div class="visual">
+							<i class="fa fa-comments"></i>
+						</div>
+						<div class="details">
+							<div class="number">
+								 <?php
+								    echo get_transfer_funds($db,$_SESSION['users_id']);
+								 ?>
+							</div>
+							<div class="desc">
+								Total Transferred funds
+							</div>
+						</div>
+						<a class="more" href="../transfer_funds">
+						View more <i class="m-icon-swapright m-icon-white"></i>
+						</a>
+					</div>
+				</div>
+                
+                
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="dashboard-stat blue-madison">
+						<div class="visual">
+							<i class="fa fa-comments"></i>
+						</div>
+						<div class="details">
+							<div class="number">
+								 <?php
+								    echo get_total_loans($db,$_SESSION['users_id']);
+								 ?>
+							</div>
+							<div class="desc">
+								Total Loans
+							</div>
+						</div>
+						<a class="more" href="../loans">
+						View more <i class="m-icon-swapright m-icon-white"></i>
+						</a>
+					</div>
+				</div>
+                
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="dashboard-stat green-haze">
+                        <div class="visual">
+                            <i class="fa fa-comments"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+                                 <?php
+                                    echo get_total_credited_loans($db,$_SESSION['users_id']);
+                                 ?>
+                            </div>
+                            <div class="desc">
+                                Total Credited Loans
+                            </div>
+                        </div>
+                        <a class="more" href="../loans">
+                        View more <i class="m-icon-swapright m-icon-white"></i>
+                        </a>
+                    </div>
+                </div>
+    
+    
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="dashboard-stat purple-plum">
+                        <div class="visual">
+                            <i class="fa fa-comments"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+                                 <?php
+                                    echo get_total_debitted_loans($db,$_SESSION['users_id']);
+                                 ?>
+                            </div>
+                            <div class="desc">
+                                Total Debited Loans
+                            </div>
+                        </div>
+                        <a class="more" href="../loans">
+                        View more <i class="m-icon-swapright m-icon-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+                
+                
+                </div>  -->
+             
+
+			<!-- END DASHBOARD STATS -->
+			<div class="clearfix">
+			</div>
+			
+		</div>
+	</div>
+	<!-- END CONTENT -->
+	
+</div>
+        <!-- END PAGE HEADER-->
+        </div>
+</div>
+<!-- END CONTAINER -->
+
+
+
+        <!----------------------Modal--------------------->
+        <!-- /.modal -->
+        <div id="invite_by_email" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                        <h4 class="modal-title">Invite</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="scroller" style="height:150px" data-always-visible="1" data-rail-visible1="1">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="portlet-body">
+						              <div class="table-responsive">	
+                                             <table class="table">
+                                                  <tr>
+                                                         <td>Email</td>
+                                                         <td>
+                                                            <input type="text" name="invited_email" id="invited_email"  value="<?=$invited_email?>" class="form-control-static">
+                                                         </td>
+                                                     </tr>
+                                             </table>
+										</div>
+								    </div>                                
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn default">Close</button>
+                        <button type="button" class="btn green" onClick="request();">Request to Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script language="javascript">
+	   ////////////////////////////////////////////////
+	   function request(){
+		 $.ajax({
+				   headers: {
+					   "Access-Control-Allow-Origin": "*",
+					   "Access-Control-Allow-Methods": "GET, POST, PUT",
+					   "Access-Control-Allow-Headers": "Content-Type"
+				   },
+				  method: "GET",
+				  url: 'index.php',
+				  data: {
+					  'invited_email'      :  $("#invited_email").val(),					 
+					  'cmd'                :  'invite_by_email'
+				  },
+				  dataType: 'json',
+				  timeout: 60000,
+				  async : true,
+				  success: function (data) {
+					   obj = eval(data);
+					   if(obj.status == "success")
+						{
+						   toastr.options.timeOut = 3000;
+						   toastr.success(obj.msg);
+						}																													
+			  },
+			  error: function (jqXHR, exception) {
+					  //map.setClickable(false);
+					  if(jqXHR.status==0)
+					  {
+						  //cntrlVisible = {server_error_panel:1};
+						  //setVisibleServerError(cntrlVisible);
+						  
+					  }
+					  //alert(JSON.stringify(jqXHR));
+				  }
+		  });
+	   }	  
+	  //////////////////////////////////////////
+</script>
+
+
+
+
+
+
+
+<!-- BEGIN FOOTER -->
+<div class="page-footer">
+	<div class="page-footer-inner">         
+         Copyright@<?=date("Y")?>. All right reserved.</a>
+	</div>
+	<div class="scroll-to-top">
+		<i class="icon-arrow-up"></i>
+	</div>
+</div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="<?=$assets_url?>/assets/global/plugins/respond.min.js"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+<script src="<?=$assets_url?>/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="<?=$assets_url?>/assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="<?=$assets_url?>/assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/bootstrap-daterangepicker/moment.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+<!-- IMPORTANT! fullcalendar depends on jquery-ui-1.10.3.custom.min.js for drag & drop support -->
+<script src="<?=$assets_url?>/assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="<?=$assets_url?>/assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/admin/pages/scripts/index.js" type="text/javascript"></script>
+<script src="<?=$assets_url?>/assets/admin/pages/scripts/tasks.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+jQuery(document).ready(function() {    
+   Metronic.init(); // init metronic core componets
+   Layout.init(); // init layout
+   QuickSidebar.init(); // init quick sidebar
+   Demo.init(); // init demo features 
+   Index.init();   
+   Index.initDashboardDaterange();
+   Index.initJQVMAP(); // init index page's custom scripts
+   Index.initCalendar(); // init index page's custom scripts
+   Index.initCharts(); // init index page's custom scripts
+   Index.initChat();
+   Index.initMiniCharts();
+   Tasks.initDashboardWidget();
+});
+</script>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

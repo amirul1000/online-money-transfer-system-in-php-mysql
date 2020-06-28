@@ -1,0 +1,566 @@
+    @media only screen and (min-width: 1400px) {}
+
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .single-process .content h4 {
+            font-size: 20px;
+        }
+        .single-header-bottom .content {
+            font-size: 17px
+        }
+        .single-featured .content {
+            padding-left: 90px;
+            padding-right: 10px;
+        }
+        .single-featured .icon {
+            width: 75px;
+            line-height: 207px
+        }
+        .single-address .button {
+            width: 160px;
+        }
+        .pages-widget ul li a {
+            line-height: inherit;
+        }
+        .pages-widget ul li {
+            line-height: 40px;
+        }
+
+        #cssmenu>ul>li.has-sub>a {
+            padding-right: 20px;
+        }
+        header.second-header .button {
+            width: auto;
+        }
+        h2.main-title {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .main-slider-welcome-text {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+        .single-loan-checking-options br {
+            display: none;
+        }
+
+        .check-your-rate-text h4 {
+            font-size: 22px;
+        }
+        .second-single-loan-process h4 {
+            font-size: 20px;
+        }
+        .dream-quote-text h2 br {
+            display: none;
+        }
+        #cssmenu>ul>li.has-sub>a:before {
+            right: 0
+        }
+        .about-cradit-list li {
+            line-height: normal;
+            margin-bottom: 20px
+        }
+        .second-header.third-header #cssmenu{
+            text-align: right;
+        }
+        .sliderthree .slider-cell{
+            padding-top: 130px;
+        }
+        .second-header.third-header #cssmenu>ul>li>a {
+    padding-left: 0;
+    padding-right: 15px;
+    margin-right: 20px;
+}
+.how-it-work-content {
+    padding-top: 0;
+}
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-address {
+            width: 50%;
+            margin-bottom: 20px
+        }
+        .single-address:last-child {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .single-address:last-child a.button {
+            display: inline-block;
+        }
+        .single-header-bottom {
+            margin-bottom: 20px
+        }
+        .header-bottom-section {
+            padding-bottom: 30px
+        }
+        .single-featured .icon {
+            line-height: 207px
+        }
+        .choose-title h4 {
+            font-size: 18px;
+        }
+        .single-process {
+            margin-bottom: 30px
+        }
+        .single-team {
+            text-align: center;
+            margin-bottom: 30px
+        }
+        .team-section.section-padding {
+            padding-bottom: 70px;
+        }
+        section.loan-calculator::before {
+            width: 100%;
+        }
+        .map-img {
+            margin-bottom: 40px;
+        }
+        .single-article {
+            margin-bottom: 40px;
+        }
+        .footer-widget {
+            margin-bottom: 50px;
+        }
+        .footer-area.section-padding {
+            padding-bottom: 50px;
+        }
+        .pages-widget ul li a {
+            line-height: 16px;
+        }
+        .pages-widget ul li {
+            line-height: 30px;
+        }
+        /*start home page tow*/
+        .second-process:after {
+            z-index: -1;
+        }
+        .about-cradit-list li {
+            line-height: normal;
+            margin-bottom: 20px
+        }
+        .second-single-servces p br {
+            display: none;
+        }
+        .second-single-servces p {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        header.second-header .button {
+            display: none;
+        }
+        h2.main-title {
+            line-height: normal;
+            font-size: 30px;
+        }
+        .second-header #cssmenu>ul>li>a {
+            padding-right: 17px;
+            padding-left: 10px;
+        }
+        .second-topbar .left-topbar li {
+            margin-right: 20px;
+        }
+        #cssmenu>ul>li.has-sub>a:before {
+            right: 0
+        }
+        .main-slider-welcome-text {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        /*start header three*/
+        .second-header.third-header #cssmenu>ul>li>a {
+            padding-left: 0;
+            padding-right: 14px;
+            margin-right: 16px;
+        }
+        .single-experience .content {
+            padding-left: 53px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .single-experience .icon {
+            font-size: 30px;
+            width: 40px;
+        }
+        .footer-three .footer-two-social a{
+            margin-bottom: 4px;
+        }
+        /*end of header three*/
+        .how-it-work-content {
+    padding-top: 0;
+}
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        /*start home page one csss*/
+        .left-info p {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .right-info p {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .right-info p a:first-child {
+            margin-left: 0;
+        }
+
+        .sitelogo {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .single-address {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .single-address a.button {
+            margin-left: 0;
+        }
+
+        .single-address:last-child {
+            margin-bottom: 0;
+        }
+        .searchbtn {
+            display: none;
+        }
+        h2.main-title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+        .active-main-slider .owl-nav .owl-next {
+            width: 30px;
+            right: 0
+        }
+        .active-main-slider .owl-nav .owl-prev {
+            width: 30px;
+            left: 0
+        }
+        .single-header-bottom {
+
+            margin-bottom: 20px;
+        }
+        .single-header-bottom.mb0 {
+            margin-bottom: 0;
+        }
+
+        .single-featured .icon {
+            float: none;
+            width: 100%;
+            line-height: 100px;
+            border-right: 0;
+            border-bottom: 1px solid #e9e9e9;
+        }
+        .single-why-choose {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        section.why-choose-lender.section-padding {
+            padding-bottom: 40px;
+        }
+        .single-featured .content {
+            padding-left: 30px;
+        }
+        .process-list .process:before {
+            display: none;
+        }
+        .process-list .process:after {
+            display: none;
+        }
+        .single-process {
+            margin-bottom: 30px;
+        }
+
+        section.loan-process-section.section-padding {
+            padding-bottom: 40px;
+        }
+
+        .single-team {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .calculator-form {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        section.loan-calculator:before {
+
+            width: 100%;
+        }
+        section.featured-section.section-padding {
+            padding-bottom: 40px
+        }
+        .section-title {
+            margin-bottom: 50px;
+        }
+        section.team-section.section-padding {
+            padding-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 30px
+        }
+        .welcome-button a {
+            width: 130px;
+        }
+        .map-img {
+            margin-bottom: 30px;
+        }
+        .single-article {
+            margin-bottom: 30px;
+        }
+
+        .footer-widget {
+            margin-bottom: 30px;
+        }
+
+        section.footer-area.section-padding {
+            padding-bottom: 40px;
+        }
+        .section-padding {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .copyright-text {
+            text-align: center;
+        }
+
+        .footer-link {
+            text-align: center;
+        }
+        .testimonial-content h4 {
+            font-size: 18px;
+        }
+        .single-testimonial {
+            padding: 10px;
+        }
+        /*end of home page one css*/
+        /*start second home page area*/
+        .second-header a.button.hvr-bounce-to-right {
+            display: none;
+        }
+        header.second-header div#cssmenu>ul>li {
+            text-align: left;
+        }
+        .second-header div#cssmenu ul li {
+            background: #232323;
+        }
+        .second-header #cssmenu.small-screen #menu-button {
+            text-align: left;
+        }
+        .second-logo {
+            margin-top: 0;
+            margin-bottom: -40px;
+            position: relative;
+            z-index: 4;
+            width: 200px;
+        }
+        .second-social {
+            text-align: center;
+        }
+        .left-topbar {
+            text-align: center;
+        }
+        .second-social a:first-child {
+            margin-left: 0;
+        }
+        .second-header #cssmenu.small-screen>ul {
+            margin-top: 20px;
+        }
+        .second-about-content h2 {
+            font-size: 30px
+        }
+        .about-cradit-list li {
+            font-size: 20px;
+            color: #232323;
+            line-height: normal;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+        .about-cradit-list {
+            padding-left: 0;
+            margin-left: 0
+        }
+        .btn {
+            white-space: inherit;
+        }
+        .active-main-slider .owl-nav {
+            display: none;
+        }
+        .single-loan-checking-options p br {
+            display: none;
+        }
+
+        .check-your-rate-text {
+            margin-bottom: 20px;
+        }
+
+        .second-single-loan-process {
+            margin-bottom: 70px;
+        }
+
+        .second-process:after {
+            display: none;
+        }
+
+        .second-process:last-child .second-single-loan-process {
+            margin-bottom: 0;
+        }
+        .dream-quote-text h2 {
+            font-size: 30px;
+            line-height: normal;
+        }
+        .second-accordion .card {
+            margin-bottom: 10px;
+        }
+        section.loan-second-services.section-padding {
+            padding-bottom: 30px;
+        }
+        .main-slider-welcome-text br {
+            display: none;
+        }
+        .dream-quote-text br {
+            display: none;
+        }
+        header.second-header div#cssmenu>ul>li {
+            display: block;
+        }
+        .main-slider-welcome-text {
+            height: 380px;
+        }
+        .slidertwo {
+            height: 500px;
+        }
+        .about-cradit-list {
+            margin-top: 30px;
+            padding-left: 20px
+        }
+        .check-your-rate-btn {
+            text-align: left;
+            padding-bottom: 10px
+        }
+        /*end of second home page area*/
+        /*blog page css*/
+        .sidebar-area {
+            margin-top: 50px;
+        }
+        .footer-nave {
+            text-align: center;
+        }
+        .tags {
+            text-align: center;
+        }
+
+        .share {
+            text-align: center;
+        }
+        .single-comment.replay-comment {
+            padding-left: 0
+        }
+        .comment-box {
+            margin-bottom: 15px
+        }
+        .services-details .tab-pane {
+            padding: 30px;
+        }
+        .list-input div:last-child .single-get-touch {
+            margin-bottom: 50px;
+        }
+        .single-contact-info {
+            margin-bottom: 30px;
+        }
+        section.section-padding.contact-us-padding {
+            padding-bottom: 20px
+        }
+        /*end of blog page css*/
+        /*start home page three css*/
+        .menu-info {
+            display: none;
+        }
+        .third-header #cssmenu.small-screen #menu-button:before {
+            background: #232323;
+        }
+        .third-header #cssmenu.small-screen #menu-button:after {
+            border-top-color: #232323;
+            border-bottom-color: #232323;
+        }
+        .third-header #cssmenu.small-screen #menu-button.menu-opened:after {
+            background: #232323;
+        }
+        .third-header #cssmenu.small-screen #menu-button {
+            top: -4px
+        }
+        .single-third-about-us.topimage {
+            margin-bottom: 50px;
+        }
+        ul.footer-nav {
+            text-align: center;
+        }
+        header.second-header.third-header #cssmenu>ul>li>a {
+            color: #fff;
+            padding-left: 20px;
+        }
+        header.second-header.third-header #cssmenu>ul>li>a {
+            padding-top: 17px;
+            padding-bottom: 16px;
+        }
+        .sliderthree .slider-cell {
+            padding-top: 60px;
+        }
+        /*end of home page 3 css*/
+        /*start how it works page*/
+        .searchform{
+            display: none;
+        }
+        .how-it-work-content{
+            padding-top: 50px
+        }
+        .how-it-work-backgrond .how-it-work-content{
+            padding-top: 0
+        }
+        /*end of how it works page*/
+        #cssmenu>ul>li>a {
+            padding-top: 18px;
+            padding-bottom: 15px;
+        }
+        .mr0{
+            margin-right:15px;
+        }
+        .single-block{
+            padding-bottom: 0
+        }
+        section.services-image-page.third-services.section-padding {
+            padding-bottom: 0;
+        }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+        .sitelogo {
+            text-align: center;
+        }
+        .single-address {
+            width: 50%;
+        }
+        .single-address:last-child {
+            width: 100%;
+            text-align: center;
+        }
+        .single-address a.button {
+            display: inline-block;
+        }
+        .single-featured .content {
+            padding-left: 120px;
+        }
+        .single-featured .icon {
+            float: left;
+            width: 90px;
+            line-height: 180px;
+        }
+    }

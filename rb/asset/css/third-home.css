@@ -1,0 +1,295 @@
+header.second-header.third-header {
+    background: rgba(255, 255, 255, 0.8);
+    border: 0;
+}
+
+
+.second-header.third-header #cssmenu>ul>li>a {
+    padding-left: 0;
+    padding-right: 30px;
+    margin-right: 10px;
+}
+.second-header.third-header #cssmenu>ul>li:last-child>a{
+
+    margin-right: 0
+}
+
+header.second-header.third-header #cssmenu>ul>li>a {
+    color: #232323;
+}
+
+.menu-info .content p {
+    color: #232323;
+}
+
+.menu-info .content {
+    float: left;
+}
+
+.menu-info .icon {
+    float: left;
+    width: 30px;
+    border: 1px solid #232323;
+    text-align: center;
+    border-radius: 4px;
+    color: #232323;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.menu-info.thir-btn {
+    text-align: right;
+}
+
+.menu-info.thir-btn a.btn.btn-sm {
+    width: 140px !important;
+}
+
+.menu-info {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.menu-info {
+    width: 33%;
+    float: left;
+}
+
+.menu-info.thir-btn {
+    margin-top: 0;
+}
+
+.menu-info a {
+    width: 100% !important;
+}
+
+.sliderthree .slider-cell {
+    padding-top: 100px;
+}
+
+
+/*end of header area*/
+
+
+/*start features block section*/
+
+.nopadding{
+	padding:0;
+    border-bottom: 1px solid #e4e4e4;
+}
+.single-block{
+    border-right: 1px solid #e4e4e4;
+}
+.single-block .icon {
+    text-align: center;
+    line-height: 110px;
+}
+.single-block .content {
+    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.single-block .content h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #232323;
+}
+
+.single-block .content h5 {
+    margin-bottom: 0
+}
+
+.block-features {
+}
+
+.block-features .col-md-4:last-child .single-block{
+    border-right: 0
+}
+
+
+/*end of features section*/
+
+
+/*start third about us area*/
+
+.single-third-about-us.topimage .about-thumb {
+    margin-bottom: 30px;
+}
+
+.single-third-about-us h2 {
+    color: #232323;
+    font-weight: 600;
+}
+
+.single-third-about-us.bottomimage .about-thumb {
+    margin-top: 30px;
+}
+
+section.third-services.section-padding {
+    background-color: #f7f8fa;
+}
+
+
+/*end of third about us area*/
+
+
+/*start counter section*/
+
+section.experience-section.section-padding {
+    background-image: url(../img/dreambg.jpg);
+    position: relative;
+}
+
+section.experience-section.section-padding:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+}
+
+.single-experience {
+    text-align: center;
+    color: #fff;
+}
+
+.single-experience .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    float: left;
+    border-right: 1px solid #9ea5b4;
+    width: 70px;
+    text-align: left;
+}
+
+.single-experience .icon i{
+    color: #24c8a6;
+}
+
+.single-experience .content h2 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.single-experience .content {
+    text-align: left;
+    padding-left: 100px;
+    font-weight: 600
+}
+
+.experience-title h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.experience-title {
+    margin-bottom: 50px;
+}
+
+.experience-title h2 span {
+    display: block;
+    color: #24c8a6;
+}
+
+
+/*end of counter section*/
+
+
+/*start third testimonial section*/
+
+section.third-testimonial-section {
+    background: #f7f8fa;
+}
+.single-testimonial-third .testimonial-img img {
+    display: inline-block !important;
+    width: auto;
+    max-width: 100%;
+}
+
+.single-testimonial-third .testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: -50px;
+}
+
+.single-testimonial-third {
+    text-align: center;
+}
+
+.single-testimonial-third .content {
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background: #fff;
+}
+
+.single-testimonial-third .content h4 {
+    margin-bottom: 4px;
+    color: #232323;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.single-testimonial-third .content .title {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+/*end of third testimonial section*/
+
+/*brand section css*/
+
+section.brand-section.third-brand {
+    background-color: #3a7cdd;
+}
+
+/*end of bran section*/
+
+/*start footer area*/
+
+.footer-area.footer-two.footer-three.footer-three{
+    background: #f4f4f4;
+}
+
+.footer-three .footer-title h4{
+    color: #232323
+}
+.footer-three .footer-widget p{
+    color: #232323
+}
+.footer-three ul li, .footer-three .footer-widget ul li a {
+    color: #232323
+}
+.contact-widget li .content {
+    padding-left: 54px;
+}
+.footer-three .pages-widget ul li a:hover{
+    color: #9ea5b4
+}
+
+.footer-two-social a{
+    color: #fff
+}
+.footer-three .contact-widget li .content p{
+    color: #232323
+}
+.footer-three .footer-two-social a:hover {
+    background-color: #24C8A6;
+    color: #fff;
+    border: 1px solid #24C8A6;
+}
+.footer-three .footer-two-social a {
+    color: #232323;
+    color: #24C8A6;
+    border: 1px solid #24C8A6;
+}
+/*end of footer area*/
