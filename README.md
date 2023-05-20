@@ -3,7 +3,7 @@
 Online deposit,money transfer,loan & withdraw management system in php mysql free code
 =======================================================================================
 
-Youtube Tutorial : https://youtu.be/CErZC0IphVs
+Youtube Tutorial : https://www.youtube.com/watch?v=SqhZfJGKayo
 
 
 Donate to Paypal : https://www.paypal.com/paypalme/patacorporation
